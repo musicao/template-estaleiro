@@ -1,0 +1,416 @@
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="apple-touch-icon" sizes="180x180" href="src/assets/img/favicons/apple-touch-icon.png"/>
+  <link rel="icon" type="image/png" sizes="32x32" href="src/assets/img/favicons/favicon-32x32.png"/>
+  <link rel="icon" type="image/png" sizes="16x16" href="src/assets/img/favicons/favicon-16x16.png"/>
+  <link rel="manifest" href="assets/img/favicons/manifest.json"/>
+  <title><%= htmlWebpackPlugin.options.title %></title>
+ 
+</head>
+
+<body class="template-system">
+
+  <div class="visually-hidden">
+    <ul>
+      <li><a href="#content" accesskey="1">Ir para o Conteúdo Principal [Alt + 1]</a></li>
+      <li><a href="#header" accesskey="2">Início do Menu [Alt + 2]</a></li>
+      <li><a href="#altocontraste" id="altocontraste" accesskey="3" onclick="window.toggleContrast()" onkeydown="window.toggleContrast()">Alto contraste [Alt + 3]</a></li>
+    </ul>
+  </div>
+
+  <div id="barra-brasil" style="background:#7F7F7F; height: 20px; padding:0 0 0 10px;display:block;">
+    <ul id="menu-barra-temp" style="list-style:none;">
+      <li style="display:inline; float:left;padding-right:10px; margin-right:10px; border-right:1px solid #EDEDED">
+          <a href="http://brasil.gov.br" style="font-family:sans,sans-serif; text-decoration:none; color:white;">Portal do Governo Brasileiro</a>
+      </li>
+    </ul>
+  </div>
+ 
+  <!-- Cabeçalho da página -->
+  <header id="header" class="page-header" data-type="system">
+    <!-- Sombra do topo -->
+    <div class="shadow-bottom">
+      <div class="container-fluid">
+       
+        
+
+        <!-- Barra principal -->
+        <div class="header-bar">
+          <!-- Logo -->
+          <div class="logo">
+            <span class="description">Assinatura do Órgão</span>
+            <a href="" id="logo" class="name">Nome do Órgão</a>
+          </div>
+          <!-- Links rápidos -->
+          <div class="quicklinks">
+            <ul>
+              <li><a href="">Acesso à informação</a></li>
+              <li><a href="">Participe</a></li>
+              <li><a href="">Acessibilidade</a></li>
+            </ul>
+            <!-- Altocontraste -->
+            <a href="#" id="contrast" class="" style="display: inline-flex;" accesskey="6">
+              <i class="fas fa-adjust fa-lg"></i>
+              <span class="d-none d-md-block" onclick="window.toggleContrast()" onkeydown="window.toggleContrast()">Alto contraste</span>
+            </a>
+          </div>
+          <!-- Busca geral -->
+          <div class="search">
+            <div class="field">
+              <label for="search" class="sr-only">Autocomplete</label>
+              <input id="search" type="search" placeholder="O que você procura?">
+              <button class="" type="button">
+                <i class="fas fa-search fa-lg"></i>
+                <span class="sr-only">buscar</span>
+              </button>
+            </div>
+            <button class="close" type="button">
+              <i class="fas fa-times fa-lg"></i>
+              <span class="sr-only">fechar a busca</span>
+            </button>
+          </div>
+          <!-- Barra do usuário -->
+          <div class="user-bar">
+            <!-- Configurações do usuário -->
+            <div class="configs dropdown">
+              <button class="trigger" type="button">
+                <!-- Avatar do usuário -->
+                <div class="avatar">
+                  <img src="src/assets/img/avatar.png" alt="Avatar">
+                  <!-- <i class="fas fa-user-circle"></i> -->
+                </div>
+                <!-- Notificações -->
+                <span class="badge">5</span>
+                <!-- Seta para abrir menu -->
+                <div class="arrow">
+                  <i class="fas fa-chevron-down"></i>
+                </div>
+              </button>
+              <div class="menu">
+                <!-- Informações do usuário -->
+                <div class="title user">
+                  <div class="name">Márcia Vinícius Tavares de Almeida</div>
+                  <div class="email">marcia-vinicius.almeida@serpro.gov.br</div>
+                </div>
+                <!-- Lista de configurações -->
+                <span class="title">
+                  <i class="fas fa-cog"></i>
+                  Configuração/Perfil
+                </span>
+                <a href="" class="item">Configuração 01</a>
+                <a href="" class="item">Configuração 02</a>
+                <a href="" class="item">Configuração 03</a>
+              </div>
+            </div>
+            <!-- Sistemas favoritos do usuário -->
+            <div class="bookmarks dropdown">
+              <button class="trigger" type="button">
+                <i class="fas fa-th-large"></i>
+              </button>
+              <div class="menu">
+                <div class="title">Sistemas</div>
+                <div class="list">
+                  <div class="item">
+                    <a href="" class="bookmark">
+                      <div class="brand"></div>
+                      <div class="name">Sistema 01</div>
+                    </a>
+                  </div>
+                  <div class="item">
+                    <a href="" class="bookmark">
+                      <div class="brand"></div>
+                      <div class="name">Sistema 02</div>
+                    </a>
+                  </div>
+                  <div class="item">
+                    <a href="" class="bookmark">
+                      <div class="brand"></div>
+                      <div class="name">Sistema 03</div>
+                    </a>
+                  </div>
+                  <div class="item">
+                    <a href="" class="bookmark">
+                      <div class="brand"></div>
+                      <div class="name">Sistema 04</div>
+                    </a>
+                  </div>
+                  <div class="item">
+                    <a href="" class="bookmark">
+                      <div class="brand"></div>
+                      <div class="name">Sistema 05</div>
+                    </a>
+                  </div>
+                  <div class="item">
+                    <a href="" class="bookmark">
+                      <div class="brand"></div>
+                      <div class="name">Sistema 06</div>
+                    </a>
+                  </div>
+                  <div class="item">
+                    <a href="" class="bookmark">
+                      <div class="brand"></div>
+                      <div class="name">Sistema 07</div>
+                    </a>
+                  </div>
+                  <div class="item">
+                    <a href="" class="bookmark">
+                      <div class="brand"></div>
+                      <div class="name">Sistema 08</div>
+                    </a>
+                  </div>
+                  <div class="item">
+                    <a href="" class="bookmark">
+                      <div class="brand"></div>
+                      <div class="name">Sistema 09</div>
+                    </a>
+                  </div>
+                  <div class="item">
+                    <a href="" class="bookmark">
+                      <div class="brand"></div>
+                      <div class="name">Sistema 10</div>
+                    </a>
+                  </div>
+                </div>
+                <div class="more">
+                  <a href="">Mais</a>
+                </div>
+              </div>
+            </div>
+            <!-- Logout -->
+            <button class="logout" type="button">Sair</button>
+          </div>
+          <!-- Menu sanduiche -->
+          <button class="menu-hamburger" type="button">
+            <i class="fa fa-bars"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- Wrapper principal -->
+  <div class="page-wrapper">
+    <!-- Menu de navegação -->
+    <nav id="navigation" class="navigation" data-type="system" data-level="0">
+      <div class="wrapper">
+        <div class="overflow-auto">
+          <div class="container">
+            <!-- Logo e avatar -->
+            <div class="header-bar">
+              <!-- Avatar do usuário -->
+              <div class="nav-avatar">
+                <!-- Configurações do usuário -->
+              </div>
+              <!-- Altocontraste -->
+              <div class="nav-contrast">
+              </div>
+              <!-- Sistemas favoritos do usuário -->
+              <div class="nav-bookmarks">
+              </div>
+              <!-- Logo -->
+              <div class="nav-logo"></div>
+            </div>
+            <!-- Menu de navegação -->
+            <div class="items">
+              <!-- Navegação local -->
+              <ul class="local" data-level="0">
+                <li class="item">
+                  <button type="button">Item de nível 1</button>
+                  <ul class="submenu level-1" data-level="1">
+                    <li class="item">
+                      <button type="button">Item de nível 2.1</button>
+                      <ul class="submenu level-2" data-level="2">
+                        <li class="item"><a href="">Item de nível 3.1</a></li>
+                        <li class="item"><a href="">Item de nível 3.1</a></li>
+                        <li class="item"><a href="">Item de nível 3.1</a></li>
+                      </ul>
+                    </li>
+                    <li class="item">
+                      <button type="button">Item de nível 2.2</button>
+                      <ul class="submenu level-2" data-level="2">
+                        <li class="item"><a href="">Item de nível 3.2</a></li>
+                        <li class="item"><a href="">Item de nível 3.2</a></li>
+                        <li class="item"><a href="">Item de nível 3.2</a></li>
+                      </ul>
+                    </li>
+                    <li class="item">
+                      <button type="button">Item de nível 2.3</button>
+                      <ul class="submenu level-2" data-level="2">
+                        <li class="item"><a href="">Item de nível 3.3</a></li>
+                        <li class="item"><a href="">Item de nível 3.3</a></li>
+                        <li class="item"><a href="">Item de nível 3.3</a></li>
+                      </ul>
+                    </li>
+                    <li class="item">
+                      <button type="button">Item de nível 2.4</button>
+                      <ul class="submenu level-2" data-level="2">
+                        <li class="item"><a href="">Item de nível 3.4</a></li>
+                        <li class="item"><a href="">Item de nível 3.4</a></li>
+                        <li class="item"><a href="">Item de nível 3.4</a></li>
+                      </ul>
+                    </li>
+                    <li class="item">
+                      <button type="button">Item de nível 2.5</button>
+                      <ul class="submenu level-2" data-level="2">
+                        <li class="item"><a href="">Item de nível 3.5</a></li>
+                        <li class="item"><a href="">Item de nível 3.5</a></li>
+                        <li class="item"><a href="">Item de nível 3.5</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+                <li class="item">
+                  <button type="button">Conheça a Presidência</button>
+                  <ul class="submenu level-1" data-level="1">
+                    <li class="item"><a href="">Biografia do Presidente</a></li>
+                    <li class="item"><a href="">Ministros</a></li>
+                    <li class="item"><a href="">Principais Tropas</a></li>
+                    <li class="item"><a href="">Palácio e Residências</a></li>
+                    <li class="item"><a href="">Acervo</a></li>
+                    <li class="item"><a href="">Ritos e Solenidades</a></li>
+                    <li class="item"><a href="">Presentes recebidos pelo Presidênte da República</a></li>
+                  </ul>
+                </li>
+                <li class="item">
+                  <button type="button">Vice-Presidência</button>
+                  <ul class="submenu level-1" data-level="1">
+                    <li class="item"><a href="">Agenda Vice-Presidente</a></li>
+                    <li class="item"><a href="">Agendas do Gabinete Pessoal da Vice-Presidência</a></li>
+                    <li class="item"><a href="">Biografia</a></li>
+                    <li class="item"><a href="">Atribuições</a></li>
+                    <li class="item"><a href="">Discursos e Pronunciamentos</a></li>
+                  </ul>
+                </li>
+                <li class="item">
+                  <button type="button">Acesso à Informação</button>
+                  <ul class="submenu level-1" data-level="1">
+                    <li class="item"><a href="">Institucional</a></li>
+                    <li class="item"><a href="">Ações e Programas</a></li>
+                    <li class="item"><a href="">Dados abertos</a></li>
+                    <li class="item"><a href="">Auditorias</a></li>
+                    <li class="item"><a href="">Convênios</a></li>
+                    <li class="item"><a href="">Despesas</a></li>
+                    <li class="item"><a href="">Licitações e contratos</a></li>
+                    <li class="item"><a href="">Servidores</a></li>
+                    <li class="item"><a href="">Informações Classificadas</a></li>
+                    <li class="item"><a href="">Serviço de Informação ao Cidadão</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <!-- Links rápidos -->
+          <div class="nav-quicklinks"></div>
+          <!-- Logout -->
+          <div class="nav-logout">
+            <div class="nav-timeout">
+            </div>
+            <div class="nav-buttontimeout">
+            </div>
+          </div>
+          <!-- Links úteis e redes sociais -->
+          <div class="row">
+            <!-- Links úteis -->
+            <!-- Redes sociais -->
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div class="flex-fill">
+      <!-- Sombra do topo -->
+      <div class="">
+        <div class="container-fluid">
+          <!-- Barra de sistema -->
+          <div class="row system-bar">
+            <!-- Breadcrumbs -->
+            <div class="col">
+              <ul class="br-breadcrumb">
+                <li class="home">
+                  <a href="">
+                    <span class="sr-only">Página inicial</span>
+                    <i class="fas fa-home"></i>
+                  </a>
+                </li>
+                <li><a href="">Tela anterior</a></li>
+                <li class="is-active"><a href="">Tela atual</a></li>
+              </ul>
+            </div>
+            <!-- Timeout -->
+            <div class="col-auto">
+              <div class="timeout">
+                <i class="fas fa-clock"></i>
+                <span class="session">Sessão:</span>
+                <span class="timer">00 min. e 00 seg</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr class="my-0">
+      <!-- Conteúdo principal -->
+      <main id="content" class="page-content">
+        <div class="container-fluid">
+          <h1 class="main-title">Título da página</h1>
+          <p>Conteúdo principal</p>
+
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sit amet vehicula lorem, nec rhoncus ligula. Proin mollis sagittis accumsan. Proin rutrum turpis id mi lacinia, elementum sodales quam malesuada. Suspendisse tristique eros non sapien iaculis varius. Etiam justo nunc, vulputate et rhoncus nec, rhoncus ut tortor. Quisque non egestas leo, sit amet semper erat. Duis id libero sit amet nibh finibus convallis vel ac risus.
+
+            Quisque elementum tortor libero, et gravida odio efficitur non. Aenean tincidunt sit amet nulla in vulputate. In vitae scelerisque neque. Cras non ante convallis, ornare lacus eu, tincidunt ipsum. Quisque ac commodo ipsum. Maecenas tristique, turpis ut imperdiet iaculis, nibh diam scelerisque ante, vitae bibendum mi ante non nisl. Vestibulum nunc nunc, venenatis in sodales scelerisque, condimentum sit amet nulla. Fusce pretium gravida enim a aliquam. Pellentesque vitae enim nec tortor faucibus consequat. Praesent pulvinar eget neque in lobortis. Cras ut elementum est. Suspendisse luctus cursus consequat.
+            
+            Etiam consequat risus non ultrices semper. Phasellus feugiat porta diam, sed laoreet tellus pharetra tincidunt. Nam laoreet cursus fringilla. Sed tincidunt turpis quis neque sollicitudin volutpat. Phasellus pretium fringilla convallis. Cras rutrum erat in nibh convallis rutrum. Pellentesque sed magna turpis.
+            
+            Sed sit amet massa ac enim dignissim auctor. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In hac habitasse platea dictumst. Donec accumsan massa vel libero posuere, eget volutpat mi sagittis. Nulla sed pulvinar dui. Suspendisse sollicitudin vitae arcu at accumsan. Phasellus quis elit sed mauris faucibus egestas. Etiam non risus aliquam, tincidunt libero eu, egestas ipsum. Interdum et malesuada fames ac ante ipsum primis in faucibus.
+            
+            Nunc ac ipsum vulputate, tristique lectus vitae, elementum massa. Aenean libero odio, aliquam vel tempus dictum, interdum sed turpis. Vivamus placerat laoreet odio, at viverra ipsum elementum vitae. Duis sodales velit nec odio luctus, ut dapibus est auctor. Pellentesque hendrerit dictum felis, eu hendrerit orci. Nunc elit ex, ornare ut diam non, convallis pulvinar velit. Sed fringilla eget ipsum sagittis viverra. Mauris eu felis eleifend, bibendum nunc sit amet, facilisis ligula. Do
+          </p>
+          <!-- Voltar ao topo -->
+          <div class="text-right">
+            <hr>
+            <a  href="#header" class="br-button is-go-top">
+              Voltar ao topo
+              <span class="br-button is-circle is-primary">
+                <i class="fas fa-chevron-up"></i>
+              </span>
+            </a>
+            <hr>
+          </div>
+          <!-- Lincença e reportar erro -->
+          <div class="row">
+            <!-- Licença -->
+            <div class="col-sm">
+              <p class="license">
+                Versão do sistema
+              </p>
+            </div>
+            <!-- Reportar erro -->
+            <div class="col-sm-auto">
+              <p class="report-error">
+                <a href="" class="text-uppercase">Reportar erro</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+  </div>
+  
+
+  
+  <!-- Rodapé de governo -->
+  <footer id="footer" class="page-footer">
+    <div id="footer-brasil" style="background-color:#071D41"></div>
+  </footer>
+
+
+
+  <script src="src/assets/vlibras/vlibras-plugin.js"></script>
+  <script src="src/assets/barra/barra_2.0.js"></script>
+
+
+</body>
+
+</html>
